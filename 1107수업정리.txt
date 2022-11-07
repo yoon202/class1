@@ -1,0 +1,23 @@
+    
+링크를 이용한 자바스크립트 경고장
+
+	<a href="javascript:alert('경고장를 띄웁니다.')">클릭해보세요</a>
+    	<a href="javascript:confirm('경고장를 띄웁니다.')">클릭해보세요</a>
+    	<a href="javascript:prompt('경고장를 띄웁니다.')">클릭해보세요</a>
+
+web tech camp- 2시간 35분짜리 듣기  /자료-https://www.koreahtml5.kr/front/devSupport/frame/IntroView.do
+
+var let const의 차이 - https://80000coding.oopy.io/e1721710-536f-43f2-823b-663389f5fbfa
+
+
+전역 변수 / 지역 변수
+
+시프트-
+제일 오른쪽 비트 0 채움
+[0][0][0][1][0][0]->[0][0][1][0][0][0]
+ mub 제일 왼쪽 비트 최상위 비트 채움
+[1][1][1][0][0][0]->[1][1][1][1][0][0]
+
+함수
+eval()함수 - 수식 계산
+parselnt()함수  
