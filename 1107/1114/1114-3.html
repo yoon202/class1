@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array 객체로 배열 만들기</h3>
+    <hr>
+    <script>
+        var degrees = new Array();
+        /*degrees[0] = [5.1];
+        degrees[1] = [5.1];
+        degrees[2] = [5.1];
+        degrees[3] = [5.1];
+        degrees[4] = [5.1];
+        degrees[5] = [5.1];
+
+        for(i = 0, sum = 0; i < degrees.length; i++){
+            sum += degrees[i];
+
+        }*/
+        for(i = 0, sum = 0; i < degrees.length; i++){
+            degrees[i] = parseFloat(prompt("현재 온도 입력",15));
+            sum += degrees[i];
+        }
+        document.write('degrees[]');
+        document.write("한:" + sum + "<br>");
+        document.write(method) .Document.write()
+        document.write('평균:', sum/degrees.length+ "<hr>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+new = 객체 생성 키워드
+
+html dom - html 태그 당 객체 생성
+
+트리 구조 - https://yoongrammer.tistory.com/68
+
+렌더트리 - https://twofivezero.tistory.com/56
+<p>dks</p>=> <p></p>=tag + dks = contant == element 
+
+-this 키워드-
+-객체 자신을 가리키는 자바스크립트 키워드
+
+
+
+-HTML 태그-
+*엘리먼트(element)로도 불림
+-다음 5 가지 요소로 구성
+-엘리먼트 이름
+-속성
+-CSS3 스타일
+-이벤트 리스너
+-콘텐츠(innerHTML)
+
+
+DOM 객체의 구성
+
+프로퍼티(property)
+메소드(method)
+컬렉션(collection)
+이벤트 리스너(event listener)
+CSS3 스타일
+
+innerHTML 프로퍼티
+시작 태그와 종료 태그 사이에 들어 있는 HTML 콘텐츠
+innerHTML 프로퍼티 수정 -> HTML 태그의 콘텐츠 변경
+
+HTML 페이지 로딩 과정
+1. 브라우저는 HTML 페이지 로드 전 빈 상태 document 생성
+2. 브라우저는 HTML 페이지를 위에서 아래로 해석
+3. HTML 태그들을 document 객체에 담아간다(DOM 객체 생성).
+4. </html> 태그를 만나면 document 객체를 완성하고 닫는다.
+
+
+사이트
+카페24 - https://www.cafe24.com/

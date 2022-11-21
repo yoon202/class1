@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function over(obj){
+            obj.src = "다운로드.jpg";
+        }
+        function out(obj){
+            obj.src = "바나나.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h1>마우스를 올려보세요</h1>
+    <hr>
+    <img src="바나나.jpg" alt="이미지"
+    onmouseover="over(this)"
+    onmouseout="out(this)">
+</body>
+</html>
