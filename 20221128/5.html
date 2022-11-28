@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>익명함수로 이벤트 리스너 작성</title>
+    <script>
+        p = document.getElementById("p");
+        p.onmouseover = function(){
+            this.style.backgroundColor = "onchid";
+        };
+        p.addEventListener("mouseout", 
+		function () { this.style.backgroundColor="white"; } // 익명 함수
+      );
+
+    </script>
+</head>
+<body>
+    <h3>익명힘수로 이벤트 작성</h3>
+    <hr>
+    <p id="p">마우스 올리면 orchid 색으로 변경</p>
+</body>
+</html>

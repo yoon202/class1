@@ -1,0 +1,52 @@
+*이벤트
+
+-이벤트
+
+마우스 클릭, 키보드 입력, 이미지나 HTML 문서의 로딩, 타이머의 타임아웃 등 사용자의 입력 행위나 문서나 브라우저의 상태 변화를 자바스크립트 코드에게 알리는 통지(notification)
+
+-이벤트 리스너 (on~형태)
+
+발생한 이벤트에 대처하기 위해 작성된 자바스크립트 코드
+
+-이벤트 종류
+
+HTML5에서 이벤트 종류는 70여가지
+이벤트 리스너 이름은 이벤트 이름 앞에 on을 덧붙임
+
+	예)onmousedown : mousedown 이벤트의 리스너
+    	onkeydown : keydown이벤트의리스너
+
+	onmouseover="this.style.backgroundColor='orchid'"// 마우스를 위에 올렸을때 이벤트 발생
+     	onmouseout="this.style.backgroundColor='white'//마우스를 안올렸을때 이벤트 발생
+
+	 p = document.getElementById("p"); // 문서가 완전히 로드되었을 때 호출
+	p.onmouseover = over; // over()를 onmouseover 리스너로 등록
+	p.onmouseout = out; // out()를 onmouseout 리스너로 등록
+
+	p.addEventListener("mouseover", over);//이벤트 리스너로 등록
+	p.addEventListener("mouseout", out);//이벤트리스너로 등록
+
+*이벤트 객체:발생한 이벤트 관련된 다양한 정보에 담은 객체
+
+-이벤트 객체에 들어 있는 정보
+
+현재 발생한 이벤트에 관한 다양한 정보
+이벤트 객체의 프로퍼티와 메소드로 알 수 있음
+이벤트의 종류마다 조금씩 다름
+이벤트 객체의 공통 멤버
+
+-target 프로퍼티
+
+이벤트 타겟 객체 가리킴
+이벤트 타겟 : 이벤트를 유발시킨 DOM 객체
+<button> 태그의 버튼을 클릭하였으면, 이때 click 이벤트의 이벤트 타겟은 버튼
+
+이벤트의 디폴트 행동: 특정 이벤트를 대한 HTML태그의 기본 행동
+
+이벤트 디폴트 행동 막는 법
+
+이벤트 리스너에서 false 리턴
+이벤트 객체의 preventDefault() 메소드 호출(이벤트 객체의 cancelable 프로퍼티가 true인 경우만 취소 가능)
+
+이벤트 흐름:이벤트가 발생하면 window 객체에 먼저 도달하고, DOM 트리를 따라 이벤트 타겟에 도착하고, 다시 반대 방향으로 흘러 window 객체에 도달한 다음 사라지는 과정
+

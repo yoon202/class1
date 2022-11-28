@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <script>
+        let files= ["img/레서팬더.jpg",
+                    "img/사막여우",
+                    "img/고슴도치"];
+        let imgs = new Array();
+        for(var i = 0; i <files.length;i++){
+            imgs[i] = new image();
+            imgs[i].src = files[i]; 
+        }
+        let next = 1;
+        function change(img){
+            img.src = imgs[next].src;
+            next++;
+            next%= imgs.length;
+
+        }
+
+</script>
+</head>
+<body>
+    <h3>new image()로 이미지 로딩</h3>
+    <hr>
+    이미지를 클릭하면 다음 이미지를 보여줍니다.<p>
+        <img style="border:20px ridge wheat" 
+                 src="img/고슴도치.jpg" alt="동물이미지"  width="200" height="200" 
+                  onclick="change(this)">
+        
+</body>
+</html>
