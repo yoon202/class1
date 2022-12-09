@@ -1,0 +1,43 @@
+/캔버스태그
+
+canvas 태그 : 웹 페이지에 빈 캔버스 공간 할당
+canvas 태그
+
+beginPath = 빈경로 만드는 명령어
+strokestyle: 색을 설정하는 명령어
+closePath:경로의 마지막 점과 시작점을 연결하는 직선 추가
+moveTO 경로에 담긴 도형은 그대로 두고, 점(x,y)를 시작점으로 삽입한다
+lineTO 경로 끝 점에서 (x,y)까지 직선을 경로에 추가한다
+
+원호 그리기 arc 메소드
+
+1)각도는 3시부터 시작해서 시계방향으로 계산(각도는 원주율로 표현(0도 =2파이,90도 =1파이/2 180도 = 1파이))
+2)context.arc(50, 50, 10, 0, 1.5*Math.PI, false);
+context.stroke(); // 원호를 그린다.
+
+캔버스에 그리진 그래픽을 모두 지울 때
+context.clearRect(0, 0, canvas.width, canvas.height);
+(이 코드는 경로를 지우지는 못함)
+
+캔버스의 그래픽과 경로를 모두 지울 때
+context.clearRect(0, 0, canvas.width, canvas.height);
+context.beginPath();
+
+선색 (strokeStyle 프로퍼티 이용):context.strokeStyle = "blue";
+context.strokeStyle = "#0000FF";
+context.strokeStyle = "rgb(0, 0, 255)";
+채우기 색 ( fillStyle 프로퍼티):context.fillStyle = "red";
+선 굵기 ( lineWidth 프로퍼티 ):context.lineWidth = 20; 
+
+/이미지
+
+
+/쿠키 
+쿠키 : 웹 서버가 브라우저에게 지시하여 사용자 로컬 컴퓨터에 저장하는 4K 이하의 작은 데이터
+
+
+json :	ex)https://www.oracle.com/kr/database/what-is-json/
+
+과제
+깃허브 https://ya-ya.tistory.com/14 만들기
+
